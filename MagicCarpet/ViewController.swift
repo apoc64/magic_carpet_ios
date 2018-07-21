@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         if let urlToServer = URL.init(string: url) {
             let task = URLSession.shared.dataTask(with: urlToServer, completionHandler: { (data, response, error) in
                 if error != nil || data == nil {
-//                    handle error
+//                    handle error !
                 } else {
                     if let jsonObject = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) {
                         if jsonObject is [Any] {
