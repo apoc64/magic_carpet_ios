@@ -12,9 +12,11 @@
 		41FA1EC820FCFE050098BBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FA1EC620FCFE050098BBDF /* Main.storyboard */; };
 		41FA1ECA20FCFE070098BBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FA1EC920FCFE070098BBDF /* Assets.xcassets */; };
 		41FA1ECD20FCFE070098BBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FA1ECB20FCFE070098BBDF /* LaunchScreen.storyboard */; };
+		B76E8D4E4A3254AA00D177F4 /* Pods_MagicCarpet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F1F6CCA4FD5F0F7C4DD2EF /* Pods_MagicCarpet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F56BD41EEDEDC5CBB83AD15 /* Pods-MagicCarpet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCarpet.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCarpet/Pods-MagicCarpet.release.xcconfig"; sourceTree = "<group>"; };
 		41FA1EBF20FCFE050098BBDF /* MagicCarpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCarpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FA1EC220FCFE050098BBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FA1EC420FCFE050098BBDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		41FA1EC920FCFE070098BBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FA1ECC20FCFE070098BBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FA1ECE20FCFE070098BBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F1F6CCA4FD5F0F7C4DD2EF /* Pods_MagicCarpet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicCarpet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D630E96FF9900CFD49C604 /* Pods-MagicCarpet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCarpet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCarpet/Pods-MagicCarpet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76E8D4E4A3254AA00D177F4 /* Pods_MagicCarpet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				41FA1EC120FCFE050098BBDF /* MagicCarpet */,
 				41FA1EC020FCFE050098BBDF /* Products */,
+				953CA60163A9DA11610A6B96 /* Pods */,
+				C1696E24929AFC91AE5811C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MagicCarpet;
 			sourceTree = "<group>";
 		};
+		953CA60163A9DA11610A6B96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6D630E96FF9900CFD49C604 /* Pods-MagicCarpet.debug.xcconfig */,
+				0F56BD41EEDEDC5CBB83AD15 /* Pods-MagicCarpet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1696E24929AFC91AE5811C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0F1F6CCA4FD5F0F7C4DD2EF /* Pods_MagicCarpet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41FA1ED120FCFE070098BBDF /* Build configuration list for PBXNativeTarget "MagicCarpet" */;
 			buildPhases = (
+				3C0DB4939849E1C11B61A1F0 /* [CP] Check Pods Manifest.lock */,
 				41FA1EBB20FCFE050098BBDF /* Sources */,
 				41FA1EBC20FCFE050098BBDF /* Frameworks */,
 				41FA1EBD20FCFE050098BBDF /* Resources */,
+				FD6D50D25905EA39F5CD7E76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0DB4939849E1C11B61A1F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicCarpet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD6D50D25905EA39F5CD7E76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MagicCarpet/Pods-MagicCarpet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicCarpet/Pods-MagicCarpet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41FA1EBB20FCFE050098BBDF /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		41FA1ED220FCFE070098BBDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D630E96FF9900CFD49C604 /* Pods-MagicCarpet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +363,7 @@
 		};
 		41FA1ED320FCFE070098BBDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F56BD41EEDEDC5CBB83AD15 /* Pods-MagicCarpet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
